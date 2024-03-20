@@ -12,7 +12,8 @@ var app = builder.Build();
 //se crea una url y dentro de esta ocupa mas url
 var tasks = app.MapGroup("/task");
 
-app.MapGet("/", () => "Hello World!");
+tasks.MapGet("/", GetAllTasks);
+tasks.MapPost("/", CreateTasks);
 
 app.Run();
 
@@ -20,5 +21,14 @@ app.Run();
 static IResult GetAllTasks(DataContext db){
 
     return TypedResults.Ok(db.Tasks.ToList());
+
+}
+
+static IResult CreateTasks(Task task, DataContext db){
+
+    db.Tasks.Add(Task);
+    db.SaveChanges();
+
+    return TypedResults.Ok();
 
 }
