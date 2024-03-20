@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clase_practica_1\\clase_practica_1.csproj": {}
+    "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clases practicas\\clase_practica_1\\clase_practica_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clase_practica_1\\clase_practica_1.csproj": {
+    "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clases practicas\\clase_practica_1\\clase_practica_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clase_practica_1\\clase_practica_1.csproj",
+        "projectUniqueName": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clases practicas\\clase_practica_1\\clase_practica_1.csproj",
         "projectName": "clase_practica_1",
-        "projectPath": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clase_practica_1\\clase_practica_1.csproj",
+        "projectPath": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clases practicas\\clase_practica_1\\clase_practica_1.csproj",
         "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clase_practica_1\\obj\\",
+        "outputPath": "C:\\Users\\Matias\\Desktop\\My Homeworks\\acceso por carpetas\\De carrera\\9 semestre\\intro web movil\\clases practicas\\clase_practica_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

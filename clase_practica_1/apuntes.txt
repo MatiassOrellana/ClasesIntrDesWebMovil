@@ -11,3 +11,7 @@ con la configuracion bastante minima sin tener que hacer las capas de repositori
 
 nota: web api para el taller.
 
+nota: nuget.org los nuget package
+
+nota3: agregar versiones
+
