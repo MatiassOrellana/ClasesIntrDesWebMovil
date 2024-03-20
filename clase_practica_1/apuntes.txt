@@ -1,0 +1,13 @@
+* en las queries todo lo que se hace se expone a la base de datos, la
+diferencia del ORM se obtiene la persona a traves de su ID.
+
+* la otra diferecnia es la escalabilidad, mejor todas esas quieries los 
+hace el repositorio
+
+Minimal API:
+
+.net te permite crear 2 tipos de api y estas tiene la gracia de crear endpoints
+con la configuracion bastante minima sin tener que hacer las capas de repositorio
+
+nota: web api para el taller.
+
