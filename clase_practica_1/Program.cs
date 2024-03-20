@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //se añade el servicio de la base de datos, como opciones dentro de su constructor utilizar la tabla task
 builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDataBase("Tasks"));
+builder.Services.AddDatabaeDeveloperPageExceptionFilter();
 
 //se construye la aplicacion
 var app = builder.Build();
