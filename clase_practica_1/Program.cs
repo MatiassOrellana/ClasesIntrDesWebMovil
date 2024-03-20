@@ -12,3 +12,10 @@ var tasks = app.MapGroup("/task");
 app.MapGet("/", () => "Hello World!");
 
 app.Run();
+
+//se crea un metodo estatico que se retorna una interfaz de ese resultado
+public static IResult GetAllTasks(DataContext db){
+
+    return TypedResults.Ok(db.Tasks.ToList());
+
+}
