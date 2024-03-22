@@ -32,3 +32,5 @@ static IResult CreateTasks(Task task, DataContext db){
     return TypedResults.Ok();
 
 }
+
+//nota la fecha no soporta el ambito disk

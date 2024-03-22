@@ -1,4 +1,4 @@
-using Microsft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 
 public class DataContext : DbContext {

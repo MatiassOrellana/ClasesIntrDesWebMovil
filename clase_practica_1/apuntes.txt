@@ -15,3 +15,5 @@ nota: nuget.org los nuget package
 
 nota3: agregar versiones
 
+el miercoles hay kahoot
+
