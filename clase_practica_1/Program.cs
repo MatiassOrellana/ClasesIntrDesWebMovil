@@ -49,7 +49,7 @@ static IResult CreateTasks(Task task, DataContext db){
     db.Tasks.Add(task);
     db.SaveChanges();
 
-    return TypedResults.Ok();
+    return TypedResults.Created($"/tasks/{task.Id}", task);
 
 }
 
