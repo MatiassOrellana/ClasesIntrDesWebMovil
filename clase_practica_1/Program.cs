@@ -43,13 +43,41 @@ static IResult GetTask(int id, DataContext db){
 
 }
 
-
+//recurso que permite crear alguna tarea
 static IResult CreateTasks(Task task, DataContext db){
 
     db.Tasks.Add(task);
     db.SaveChanges();
 
     return TypedResults.Created($"/tasks/{task.Id}", task);
+
+}
+
+//recurso que actualiza la tarea
+static IResult UpdateTask(int id, Task inputTask, DataContext db){
+
+    var task = db.Tasks.Find(id);
+
+    if(task is null) return TypedResults.NotFound();
+
+    task.Name = inputTask.Name;
+    task.IsComplete = inputTask.IsComplete;
+
+    db.SaveChangesAsync();
+
+    return TypedResults.NoContent();
+}
+
+static IResult DeleteTask(int id, DataContext db){
+
+    var task = db.Tasks.Find(id);
+
+    if(task is null) return TypedResults.NotFound();
+
+    db.Tasks.Remove(task);
+    db.SaveChangesAsync();
+    return TypedResults.NoContent();
+
 
 }
 
