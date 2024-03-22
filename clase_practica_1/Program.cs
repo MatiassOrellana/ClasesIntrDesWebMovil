@@ -13,8 +13,13 @@ var app = builder.Build();
 //se crea una url y dentro de esta ocupa mas url
 var tasks = app.MapGroup("/task");
 
+//Metodos HTTP, generalmente se ocupan en los controladores
 tasks.MapGet("/", GetAllTasks);
+tasks.MapGet("/complete", GetCompleteTasks);
+tasks.MapGet("/{id}", GetTask);
 tasks.MapPost("/", CreateTasks);
+tasks.MapPut("/{id}", UpdateTask);
+tasks.MapDelete("/{id}", DeleteTask);
 
 app.Run();
 
