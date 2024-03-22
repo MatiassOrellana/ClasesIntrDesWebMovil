@@ -70,7 +70,7 @@ static IResult UpdateTask(int id, Task inputTask, DataContext db){
 
     db.SaveChangesAsync();
 
-    return TypedResults.NoContent();
+    return TypedResults.Ok();
 }
 
 static IResult DeleteTask(int id, DataContext db){
@@ -81,7 +81,7 @@ static IResult DeleteTask(int id, DataContext db){
 
     db.Tasks.Remove(task);
     db.SaveChangesAsync();
-    return TypedResults.NoContent();
+    return TypedResults.Ok();
 
 
 }
